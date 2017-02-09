@@ -110,7 +110,7 @@
 
 - (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView
 {
-    return [UIImage imageNamed:@"empty_placeholder"];
+    return [UIImage imageNamed:@"empty1"];
 }
 - (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView
 {
@@ -135,31 +135,31 @@
     
     return [[NSAttributedString alloc] initWithString:text attributes:attributes];
 }
-
+//
 - (NSAttributedString *)buttonTitleForEmptyDataSet:(UIScrollView *)scrollView forState:(UIControlState)state
 {
     NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:17.0f]};
     
-    return [[NSAttributedString alloc] initWithString:@"Continue" attributes:attributes];
+    return [[NSAttributedString alloc] initWithString:@"button" attributes:attributes];
 }
-
-- (UIImage *)buttonImageForEmptyDataSet:(UIScrollView *)scrollView forState:(UIControlState)state
-{
-    return [UIImage imageNamed:@"button_image"];
-}
-
+//
+//- (UIImage *)buttonImageForEmptyDataSet:(UIScrollView *)scrollView forState:(UIControlState)state
+//{
+//    return [UIImage imageNamed:@"button_image"];
+//}
+//
 - (UIColor *)backgroundColorForEmptyDataSet:(UIScrollView *)scrollView
 {
-    return [UIColor whiteColor];
+    return [UIColor grayColor];
 }
-
-- (UIView *)customViewForEmptyDataSet:(UIScrollView *)scrollView
-{
-    UIActivityIndicatorView *activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    [activityView startAnimating];
-    return activityView;
-}
-
+//
+//- (UIView *)customViewForEmptyDataSet:(UIScrollView *)scrollView
+//{
+//    UIActivityIndicatorView *activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+//    [activityView startAnimating];
+//    return activityView;
+//}
+//
 - (CAAnimation *)imageAnimationForEmptyDataSet:(UIScrollView *)scrollView
 {
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath: @"transform"];
@@ -176,16 +176,20 @@
 
 - (CGFloat)verticalOffsetForEmptyDataSet:(UIScrollView *)scrollView
 {
-    return -self.tableView.tableHeaderView.frame.size.height/2.0f;
+    return -100;
 }
-
-- (CGFloat)spaceHeightForEmptyDataSet:(UIScrollView *)scrollView
-{
-    return 20.0f;
-}
+//
+//- (CGFloat)spaceHeightForEmptyDataSet:(UIScrollView *)scrollView
+//{
+//    return 20.0f;
+//}
 
 #pragma mark- DZNEmptyDataSetDelegate
 - (BOOL)emptyDataSetShouldDisplay:(UIScrollView *)scrollView
+{
+    return YES;
+}
+- (BOOL)emptyDataSetShouldAnimateImageView:(UIScrollView *)scrollView
 {
     return YES;
 }

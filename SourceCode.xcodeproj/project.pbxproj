@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		771B0E061E4C41AE007CDF5A /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 771B0E051E4C41AE007CDF5A /* empty.png */; };
+		771B0E081E4C4259007CDF5A /* empty1.png in Resources */ = {isa = PBXBuildFile; fileRef = 771B0E071E4C4259007CDF5A /* empty1.png */; };
 		77DB85A41E4AEEB000156424 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DB85A31E4AEEB000156424 /* main.m */; };
 		77DB85A71E4AEEB000156424 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DB85A61E4AEEB000156424 /* AppDelegate.m */; };
 		77DB85AA1E4AEEB000156424 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DB85A91E4AEEB000156424 /* ViewController.m */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		080489247AD8C81D1A10B215 /* Pods-SourceCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SourceCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-SourceCode/Pods-SourceCode.release.xcconfig"; sourceTree = "<group>"; };
 		650338ACA167B9A6914B66E0 /* libPods-SourceCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SourceCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		771B0E051E4C41AE007CDF5A /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty.png; sourceTree = "<group>"; };
+		771B0E071E4C4259007CDF5A /* empty1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty1.png; sourceTree = "<group>"; };
 		77DB859F1E4AEEB000156424 /* SourceCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SourceCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77DB85A31E4AEEB000156424 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77DB85A51E4AEEB000156424 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		771B0E041E4C41AE007CDF5A /* ReSource */ = {
+			isa = PBXGroup;
+			children = (
+				771B0E071E4C4259007CDF5A /* empty1.png */,
+				771B0E051E4C41AE007CDF5A /* empty.png */,
+			);
+			path = ReSource;
+			sourceTree = "<group>";
+		};
 		77DB85961E4AEEB000156424 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +85,7 @@
 		77DB85A11E4AEEB000156424 /* SourceCode */ = {
 			isa = PBXGroup;
 			children = (
+				771B0E041E4C41AE007CDF5A /* ReSource */,
 				77DB85A51E4AEEB000156424 /* AppDelegate.h */,
 				77DB85A61E4AEEB000156424 /* AppDelegate.m */,
 				77DB85A81E4AEEB000156424 /* ViewController.h */,
@@ -177,7 +191,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				77DB85B51E4AEEB000156424 /* LaunchScreen.storyboard in Resources */,
+				771B0E081E4C4259007CDF5A /* empty1.png in Resources */,
 				77DB85B21E4AEEB000156424 /* Assets.xcassets in Resources */,
+				771B0E061E4C41AE007CDF5A /* empty.png in Resources */,
 				77DB85C01E4AF1D200156424 /* DZNTableViewController.xib in Resources */,
 				77DB85AD1E4AEEB000156424 /* Main.storyboard in Resources */,
 			);
